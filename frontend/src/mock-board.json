@@ -1,0 +1,1275 @@
+{
+  "ok": true,
+  "rows": [
+    {
+      "rowId": "2026-04-30|matched::demo::B 1234 ABC",
+      "day": "2026-04-30",
+      "tenantLabel": "demo",
+      "customerName": "PT Bahagia Selalu Sejahtera",
+      "unitKey": "demo::unit-1",
+      "unitId": "unit-1",
+      "unitLabel": "B 1234 ABC",
+      "normalizedPlate": "B 1234 ABC",
+      "severity": "critical",
+      "boardStatus": "normal",
+      "jobOrderId": "JO-DEMO-001",
+      "jobOrderCount": 1,
+      "originName": "Load Pertama",
+      "destinationName": "Unload Pertama",
+      "tempMin": -20,
+      "tempMax": -18,
+      "etaOrigin": "2026-04-30T20:45:55.954Z",
+      "etaDestination": "2026-04-30T21:45:55.954Z",
+      "driverAppStatus": "",
+      "incidentCodes": [
+        "temp-out-of-range"
+      ],
+      "incidentSummary": "Temperature out of range",
+      "unmatchedReason": "",
+      "overrideActive": false,
+      "metadata": {
+        "shippingStatus": {
+          "key": "otw-load",
+          "label": "OTW LOAD",
+          "changedAt": 1777574755954
+        },
+        "eta": {
+          "durationSeconds": 12086,
+          "distanceMeters": 385940,
+          "status": "on-time",
+          "stopName": "Unload Pertama",
+          "stopType": "unload",
+          "calculatedAt": 1777578355954
+        },
+        "fleetRow": {
+          "id": "unit-1",
+          "accountId": "demo",
+          "alias": "B 1234 ABC",
+          "label": "B 1234 ABC",
+          "latitude": -6.08010597682041,
+          "longitude": 106.73531037242242,
+          "speed": 20,
+          "lastUpdate": 1777578295954
+        },
+        "headlineJobOrder": {
+          "name": "JO-DEMO-001",
+          "jobOrderId": "JO-DEMO-001",
+          "originName": "Load Pertama",
+          "destinationName": "Unload Pertama",
+          "customerName": "PT Bahagia Selalu Sejahtera",
+          "tempMin": -20,
+          "tempMax": -18,
+          "driverAssign": [
+            {
+              "employee": "CREW-1",
+              "employee_name": "BUDI SANTOSO",
+              "contact_no": "081234567001",
+              "idx": 1
+            }
+          ],
+          "stops": [
+            {
+              "name": "Load Pertama",
+              "taskAddress": "Load Pertama",
+              "taskType": "load",
+              "latitude": -6.07010597682041,
+              "longitude": 106.74531037242242
+            },
+            {
+              "name": "Unload Pertama",
+              "taskAddress": "Unload Pertama",
+              "taskType": "unload",
+              "latitude": -7.179860340196042,
+              "longitude": 112.72823807834803
+            }
+          ],
+          "etaOrigin": 1777581955954,
+          "etaDestination": 1777585555954
+        },
+        "jobOrders": [
+          {
+            "jobOrderId": "JO-DEMO-001",
+            "originName": "Load Pertama",
+            "destinationName": "Unload Pertama",
+            "tempMin": -20,
+            "tempMax": -18,
+            "driverAssign": [
+              {
+                "employee": "CREW-1",
+                "employee_name": "BUDI SANTOSO",
+                "contact_no": "081234567001",
+                "idx": 1
+              }
+            ]
+          }
+        ],
+        "incidents": [
+          {
+            "code": "temp-out-of-range",
+            "label": "Temperature out of range",
+            "severity": "critical"
+          }
+        ]
+      }
+    },
+    {
+      "rowId": "2026-04-30|matched::demo::B 5678 DEF",
+      "day": "2026-04-30",
+      "tenantLabel": "demo",
+      "customerName": "PT Apel",
+      "unitKey": "demo::unit-2",
+      "unitId": "unit-2",
+      "unitLabel": "B 5678 DEF",
+      "normalizedPlate": "B 5678 DEF",
+      "severity": "warning",
+      "boardStatus": "normal",
+      "jobOrderId": "JO-DEMO-002",
+      "jobOrderCount": 1,
+      "originName": "Load Kedua",
+      "destinationName": "Unload Kedua",
+      "tempMin": -20,
+      "tempMax": -18,
+      "etaOrigin": "2026-04-30T20:45:55.954Z",
+      "etaDestination": "2026-04-30T21:45:55.954Z",
+      "driverAppStatus": "",
+      "incidentCodes": [
+        "temp-approaching"
+      ],
+      "incidentSummary": "Temperature approaching threshold",
+      "unmatchedReason": "",
+      "overrideActive": false,
+      "metadata": {
+        "shippingStatus": {
+          "key": "otw-load",
+          "label": "OTW LOAD",
+          "changedAt": 1777574755954
+        },
+        "eta": {
+          "durationSeconds": 5226,
+          "distanceMeters": 226192,
+          "status": "on-time",
+          "stopName": "Unload Kedua",
+          "stopType": "unload",
+          "calculatedAt": 1777578355954
+        },
+        "fleetRow": {
+          "id": "unit-2",
+          "accountId": "demo",
+          "alias": "B 5678 DEF",
+          "label": "B 5678 DEF",
+          "latitude": -6.2969953751891605,
+          "longitude": 106.6847108403988,
+          "speed": 7,
+          "lastUpdate": 1777578295954
+        },
+        "headlineJobOrder": {
+          "name": "JO-DEMO-002",
+          "jobOrderId": "JO-DEMO-002",
+          "originName": "Load Kedua",
+          "destinationName": "Unload Kedua",
+          "customerName": "PT Apel",
+          "tempMin": -20,
+          "tempMax": -18,
+          "driverAssign": [
+            {
+              "employee": "CREW-2",
+              "employee_name": "AGUS WIJAYA",
+              "contact_no": "081234567002",
+              "idx": 1
+            }
+          ],
+          "stops": [
+            {
+              "name": "Load Kedua",
+              "taskAddress": "Load Kedua",
+              "taskType": "load",
+              "latitude": -6.286995375189161,
+              "longitude": 106.6947108403988
+            },
+            {
+              "name": "Unload Kedua",
+              "taskAddress": "Unload Kedua",
+              "taskType": "unload",
+              "latitude": -7.241990135417112,
+              "longitude": 112.76349658572926
+            }
+          ],
+          "etaOrigin": 1777581955954,
+          "etaDestination": 1777585555954
+        },
+        "jobOrders": [
+          {
+            "jobOrderId": "JO-DEMO-002",
+            "originName": "Load Kedua",
+            "destinationName": "Unload Kedua",
+            "tempMin": -20,
+            "tempMax": -18,
+            "driverAssign": [
+              {
+                "employee": "CREW-2",
+                "employee_name": "AGUS WIJAYA",
+                "contact_no": "081234567002",
+                "idx": 1
+              }
+            ]
+          }
+        ],
+        "incidents": [
+          {
+            "code": "temp-approaching",
+            "label": "Temperature approaching threshold",
+            "severity": "warning"
+          }
+        ]
+      }
+    },
+    {
+      "rowId": "2026-04-30|matched::demo::B 9012 GHI",
+      "day": "2026-04-30",
+      "tenantLabel": "demo",
+      "customerName": "PT Nanas",
+      "unitKey": "demo::unit-3",
+      "unitId": "unit-3",
+      "unitLabel": "B 9012 GHI",
+      "normalizedPlate": "B 9012 GHI",
+      "severity": "warning",
+      "boardStatus": "normal",
+      "jobOrderId": "JO-DEMO-003",
+      "jobOrderCount": 1,
+      "originName": "Load Ketiga",
+      "destinationName": "Unload Ketiga",
+      "tempMin": -20,
+      "tempMax": -18,
+      "etaOrigin": "2026-04-30T20:45:55.954Z",
+      "etaDestination": "2026-04-30T21:45:55.954Z",
+      "driverAppStatus": "",
+      "incidentCodes": [
+        "temp-approaching"
+      ],
+      "incidentSummary": "Temperature approaching threshold",
+      "unmatchedReason": "",
+      "overrideActive": false,
+      "metadata": {
+        "shippingStatus": {
+          "key": "sampai-load",
+          "label": "SAMPAI LOAD",
+          "changedAt": 1777574755954
+        },
+        "eta": {
+          "durationSeconds": 17599,
+          "distanceMeters": 370648,
+          "status": "on-time",
+          "stopName": "Unload Ketiga",
+          "stopType": "unload",
+          "calculatedAt": 1777578355954
+        },
+        "fleetRow": {
+          "id": "unit-3",
+          "accountId": "demo",
+          "alias": "B 9012 GHI",
+          "label": "B 9012 GHI",
+          "latitude": -6.212133631353591,
+          "longitude": 106.87072880999993,
+          "speed": 20,
+          "lastUpdate": 1777578295954
+        },
+        "headlineJobOrder": {
+          "name": "JO-DEMO-003",
+          "jobOrderId": "JO-DEMO-003",
+          "originName": "Load Ketiga",
+          "destinationName": "Unload Ketiga",
+          "customerName": "PT Nanas",
+          "tempMin": -20,
+          "tempMax": -18,
+          "driverAssign": [
+            {
+              "employee": "CREW-3",
+              "employee_name": "DEDI KURNIAWAN",
+              "contact_no": "081234567003",
+              "idx": 1
+            }
+          ],
+          "stops": [
+            {
+              "name": "Load Ketiga",
+              "taskAddress": "Load Ketiga",
+              "taskType": "load",
+              "latitude": -6.2021336313535915,
+              "longitude": 106.88072880999994
+            },
+            {
+              "name": "Unload Ketiga",
+              "taskAddress": "Unload Ketiga",
+              "taskType": "unload",
+              "latitude": -7.245814731564121,
+              "longitude": 112.71310764064006
+            }
+          ],
+          "etaOrigin": 1777581955954,
+          "etaDestination": 1777585555954
+        },
+        "jobOrders": [
+          {
+            "jobOrderId": "JO-DEMO-003",
+            "originName": "Load Ketiga",
+            "destinationName": "Unload Ketiga",
+            "tempMin": -20,
+            "tempMax": -18,
+            "driverAssign": [
+              {
+                "employee": "CREW-3",
+                "employee_name": "DEDI KURNIAWAN",
+                "contact_no": "081234567003",
+                "idx": 1
+              }
+            ]
+          }
+        ],
+        "incidents": [
+          {
+            "code": "temp-approaching",
+            "label": "Temperature approaching threshold",
+            "severity": "warning"
+          }
+        ]
+      }
+    },
+    {
+      "rowId": "2026-04-30|matched::demo::D 3456 JKL",
+      "day": "2026-04-30",
+      "tenantLabel": "demo",
+      "customerName": "PT Mangga Dua",
+      "unitKey": "demo::unit-4",
+      "unitId": "unit-4",
+      "unitLabel": "D 3456 JKL",
+      "normalizedPlate": "D 3456 JKL",
+      "severity": "warning",
+      "boardStatus": "normal",
+      "jobOrderId": "JO-DEMO-004",
+      "jobOrderCount": 1,
+      "originName": "Gudang Utama",
+      "destinationName": "Warehouse Timur",
+      "tempMin": -20,
+      "tempMax": -18,
+      "etaOrigin": "2026-04-30T20:45:55.954Z",
+      "etaDestination": "2026-04-30T21:45:55.954Z",
+      "driverAppStatus": "",
+      "incidentCodes": [
+        "temp-approaching"
+      ],
+      "incidentSummary": "Temperature approaching threshold",
+      "unmatchedReason": "",
+      "overrideActive": false,
+      "metadata": {
+        "shippingStatus": {
+          "key": "sampai-load",
+          "label": "SAMPAI LOAD",
+          "changedAt": 1777574755954
+        },
+        "eta": {
+          "durationSeconds": 9644,
+          "distanceMeters": 403029,
+          "status": "on-time",
+          "stopName": "Warehouse Timur",
+          "stopType": "unload",
+          "calculatedAt": 1777578355954
+        },
+        "fleetRow": {
+          "id": "unit-4",
+          "accountId": "demo",
+          "alias": "D 3456 JKL",
+          "label": "D 3456 JKL",
+          "latitude": -6.291799041794303,
+          "longitude": 106.68865797488579,
+          "speed": 12,
+          "lastUpdate": 1777578295954
+        },
+        "headlineJobOrder": {
+          "name": "JO-DEMO-004",
+          "jobOrderId": "JO-DEMO-004",
+          "originName": "Gudang Utama",
+          "destinationName": "Warehouse Timur",
+          "customerName": "PT Mangga Dua",
+          "tempMin": -20,
+          "tempMax": -18,
+          "driverAssign": [
+            {
+              "employee": "CREW-4",
+              "employee_name": "RUDI HARTONO",
+              "contact_no": "081234567004",
+              "idx": 1
+            }
+          ],
+          "stops": [
+            {
+              "name": "Gudang Utama",
+              "taskAddress": "Gudang Utama",
+              "taskType": "load",
+              "latitude": -6.2817990417943035,
+              "longitude": 106.69865797488579
+            },
+            {
+              "name": "Warehouse Timur",
+              "taskAddress": "Warehouse Timur",
+              "taskType": "unload",
+              "latitude": -7.180937854871014,
+              "longitude": 112.71884079724764
+            }
+          ],
+          "etaOrigin": 1777581955954,
+          "etaDestination": 1777585555954
+        },
+        "jobOrders": [
+          {
+            "jobOrderId": "JO-DEMO-004",
+            "originName": "Gudang Utama",
+            "destinationName": "Warehouse Timur",
+            "tempMin": -20,
+            "tempMax": -18,
+            "driverAssign": [
+              {
+                "employee": "CREW-4",
+                "employee_name": "RUDI HARTONO",
+                "contact_no": "081234567004",
+                "idx": 1
+              }
+            ]
+          }
+        ],
+        "incidents": [
+          {
+            "code": "temp-approaching",
+            "label": "Temperature approaching threshold",
+            "severity": "warning"
+          }
+        ]
+      }
+    },
+    {
+      "rowId": "2026-04-30|matched::demo::L 7890 MNO",
+      "day": "2026-04-30",
+      "tenantLabel": "demo",
+      "customerName": "PT Jeruk Manis",
+      "unitKey": "demo::unit-5",
+      "unitId": "unit-5",
+      "unitLabel": "L 7890 MNO",
+      "normalizedPlate": "L 7890 MNO",
+      "severity": "normal",
+      "boardStatus": "normal",
+      "jobOrderId": "JO-DEMO-005",
+      "jobOrderCount": 1,
+      "originName": "Depo Pusat",
+      "destinationName": "DC Selatan",
+      "tempMin": -5,
+      "tempMax": 0,
+      "etaOrigin": "2026-04-30T20:45:55.954Z",
+      "etaDestination": "2026-04-30T21:45:55.954Z",
+      "driverAppStatus": "",
+      "incidentCodes": [],
+      "incidentSummary": "",
+      "unmatchedReason": "",
+      "overrideActive": false,
+      "metadata": {
+        "shippingStatus": {
+          "key": "menuju-unload",
+          "label": "MENUJU UNLOAD",
+          "changedAt": 1777574755954
+        },
+        "eta": {
+          "durationSeconds": 16947,
+          "distanceMeters": 88723,
+          "status": "on-time",
+          "stopName": "DC Selatan",
+          "stopType": "unload",
+          "calculatedAt": 1777578355954
+        },
+        "fleetRow": {
+          "id": "unit-5",
+          "accountId": "demo",
+          "alias": "L 7890 MNO",
+          "label": "L 7890 MNO",
+          "latitude": -6.201443539166017,
+          "longitude": 106.94282311055095,
+          "speed": 0,
+          "lastUpdate": 1777578295954
+        },
+        "headlineJobOrder": {
+          "name": "JO-DEMO-005",
+          "jobOrderId": "JO-DEMO-005",
+          "originName": "Depo Pusat",
+          "destinationName": "DC Selatan",
+          "customerName": "PT Jeruk Manis",
+          "tempMin": -5,
+          "tempMax": 0,
+          "driverAssign": [
+            {
+              "employee": "CREW-5",
+              "employee_name": "SLAMET RIYADI",
+              "contact_no": "081234567005",
+              "idx": 1
+            }
+          ],
+          "stops": [
+            {
+              "name": "Depo Pusat",
+              "taskAddress": "Depo Pusat",
+              "taskType": "load",
+              "latitude": -6.191443539166017,
+              "longitude": 106.95282311055095
+            },
+            {
+              "name": "DC Selatan",
+              "taskAddress": "DC Selatan",
+              "taskType": "unload",
+              "latitude": -7.160121531728866,
+              "longitude": 112.73003700166372
+            }
+          ],
+          "etaOrigin": 1777581955954,
+          "etaDestination": 1777585555954
+        },
+        "jobOrders": [
+          {
+            "jobOrderId": "JO-DEMO-005",
+            "originName": "Depo Pusat",
+            "destinationName": "DC Selatan",
+            "tempMin": -5,
+            "tempMax": 0,
+            "driverAssign": [
+              {
+                "employee": "CREW-5",
+                "employee_name": "SLAMET RIYADI",
+                "contact_no": "081234567005",
+                "idx": 1
+              }
+            ]
+          }
+        ],
+        "incidents": []
+      }
+    },
+    {
+      "rowId": "2026-04-30|matched::demo::H 2345 PQR",
+      "day": "2026-04-30",
+      "tenantLabel": "demo",
+      "customerName": "PT Semangka",
+      "unitKey": "demo::unit-6",
+      "unitId": "unit-6",
+      "unitLabel": "H 2345 PQR",
+      "normalizedPlate": "H 2345 PQR",
+      "severity": "normal",
+      "boardStatus": "normal",
+      "jobOrderId": "JO-DEMO-006",
+      "jobOrderCount": 1,
+      "originName": "Cold Storage A",
+      "destinationName": "Depo Barat",
+      "tempMin": -5,
+      "tempMax": 0,
+      "etaOrigin": "2026-04-30T20:45:55.954Z",
+      "etaDestination": "2026-04-30T21:45:55.954Z",
+      "driverAppStatus": "",
+      "incidentCodes": [],
+      "incidentSummary": "",
+      "unmatchedReason": "",
+      "overrideActive": false,
+      "metadata": {
+        "shippingStatus": {
+          "key": "menuju-unload",
+          "label": "MENUJU UNLOAD",
+          "changedAt": 1777574755954
+        },
+        "eta": {
+          "durationSeconds": 11593,
+          "distanceMeters": 118036,
+          "status": "on-time",
+          "stopName": "Depo Barat",
+          "stopType": "unload",
+          "calculatedAt": 1777578355954
+        },
+        "fleetRow": {
+          "id": "unit-6",
+          "accountId": "demo",
+          "alias": "H 2345 PQR",
+          "label": "H 2345 PQR",
+          "latitude": -6.303935197065383,
+          "longitude": 106.66426370750038,
+          "speed": 67,
+          "lastUpdate": 1777578295954
+        },
+        "headlineJobOrder": {
+          "name": "JO-DEMO-006",
+          "jobOrderId": "JO-DEMO-006",
+          "originName": "Cold Storage A",
+          "destinationName": "Depo Barat",
+          "customerName": "PT Semangka",
+          "tempMin": -5,
+          "tempMax": 0,
+          "driverAssign": [
+            {
+              "employee": "CREW-6",
+              "employee_name": "WAHYU PRATAMA",
+              "contact_no": "081234567006",
+              "idx": 1
+            }
+          ],
+          "stops": [
+            {
+              "name": "Cold Storage A",
+              "taskAddress": "Cold Storage A",
+              "taskType": "load",
+              "latitude": -6.293935197065383,
+              "longitude": 106.67426370750039
+            },
+            {
+              "name": "Depo Barat",
+              "taskAddress": "Depo Barat",
+              "taskType": "unload",
+              "latitude": -7.173874450776702,
+              "longitude": 112.75164255253009
+            }
+          ],
+          "etaOrigin": 1777581955954,
+          "etaDestination": 1777585555954
+        },
+        "jobOrders": [
+          {
+            "jobOrderId": "JO-DEMO-006",
+            "originName": "Cold Storage A",
+            "destinationName": "Depo Barat",
+            "tempMin": -5,
+            "tempMax": 0,
+            "driverAssign": [
+              {
+                "employee": "CREW-6",
+                "employee_name": "WAHYU PRATAMA",
+                "contact_no": "081234567006",
+                "idx": 1
+              }
+            ]
+          }
+        ],
+        "incidents": []
+      }
+    },
+    {
+      "rowId": "2026-04-30|matched::demo::AG 6789 STU",
+      "day": "2026-04-30",
+      "tenantLabel": "demo",
+      "customerName": "PT Bahagia Selalu Sejahtera",
+      "unitKey": "demo::unit-7",
+      "unitId": "unit-7",
+      "unitLabel": "AG 6789 STU",
+      "normalizedPlate": "AG 6789 STU",
+      "severity": "normal",
+      "boardStatus": "normal",
+      "jobOrderId": "JO-DEMO-007",
+      "jobOrderCount": 1,
+      "originName": "Load Pertama",
+      "destinationName": "Unload Pertama",
+      "tempMin": -5,
+      "tempMax": 0,
+      "etaOrigin": "2026-04-30T20:45:55.954Z",
+      "etaDestination": "2026-04-30T21:45:55.954Z",
+      "driverAppStatus": "",
+      "incidentCodes": [],
+      "incidentSummary": "",
+      "unmatchedReason": "",
+      "overrideActive": false,
+      "metadata": {
+        "shippingStatus": {
+          "key": "menuju-unload",
+          "label": "MENUJU UNLOAD",
+          "changedAt": 1777574755954
+        },
+        "eta": {
+          "durationSeconds": 5985,
+          "distanceMeters": 393669,
+          "status": "on-time",
+          "stopName": "Unload Pertama",
+          "stopType": "unload",
+          "calculatedAt": 1777578355954
+        },
+        "fleetRow": {
+          "id": "unit-7",
+          "accountId": "demo",
+          "alias": "AG 6789 STU",
+          "label": "AG 6789 STU",
+          "latitude": -6.281272228254677,
+          "longitude": 106.740863037756,
+          "speed": 72,
+          "lastUpdate": 1777578295954
+        },
+        "headlineJobOrder": {
+          "name": "JO-DEMO-007",
+          "jobOrderId": "JO-DEMO-007",
+          "originName": "Load Pertama",
+          "destinationName": "Unload Pertama",
+          "customerName": "PT Bahagia Selalu Sejahtera",
+          "tempMin": -5,
+          "tempMax": 0,
+          "driverAssign": [
+            {
+              "employee": "CREW-7",
+              "employee_name": "BUDI SANTOSO",
+              "contact_no": "081234567001",
+              "idx": 1
+            }
+          ],
+          "stops": [
+            {
+              "name": "Load Pertama",
+              "taskAddress": "Load Pertama",
+              "taskType": "load",
+              "latitude": -6.271272228254677,
+              "longitude": 106.750863037756
+            },
+            {
+              "name": "Unload Pertama",
+              "taskAddress": "Unload Pertama",
+              "taskType": "unload",
+              "latitude": -7.202512144356111,
+              "longitude": 112.78929853218183
+            }
+          ],
+          "etaOrigin": 1777581955954,
+          "etaDestination": 1777585555954
+        },
+        "jobOrders": [
+          {
+            "jobOrderId": "JO-DEMO-007",
+            "originName": "Load Pertama",
+            "destinationName": "Unload Pertama",
+            "tempMin": -5,
+            "tempMax": 0,
+            "driverAssign": [
+              {
+                "employee": "CREW-7",
+                "employee_name": "BUDI SANTOSO",
+                "contact_no": "081234567001",
+                "idx": 1
+              }
+            ]
+          }
+        ],
+        "incidents": []
+      }
+    },
+    {
+      "rowId": "2026-04-30|matched::demo::B 1357 VWX",
+      "day": "2026-04-30",
+      "tenantLabel": "demo",
+      "customerName": "PT Apel",
+      "unitKey": "demo::unit-8",
+      "unitId": "unit-8",
+      "unitLabel": "B 1357 VWX",
+      "normalizedPlate": "B 1357 VWX",
+      "severity": "normal",
+      "boardStatus": "normal",
+      "jobOrderId": "JO-DEMO-008",
+      "jobOrderCount": 1,
+      "originName": "Load Kedua",
+      "destinationName": "Unload Kedua",
+      "tempMin": -5,
+      "tempMax": 0,
+      "etaOrigin": "2026-04-30T20:45:55.954Z",
+      "etaDestination": "2026-04-30T21:45:55.954Z",
+      "driverAppStatus": "",
+      "incidentCodes": [],
+      "incidentSummary": "",
+      "unmatchedReason": "",
+      "overrideActive": false,
+      "metadata": {
+        "shippingStatus": {
+          "key": "sampai-unload",
+          "label": "SAMPAI UNLOAD",
+          "changedAt": 1777574755954
+        },
+        "eta": {
+          "durationSeconds": 5297,
+          "distanceMeters": 321282,
+          "status": "on-time",
+          "stopName": "Unload Kedua",
+          "stopType": "unload",
+          "calculatedAt": 1777578355954
+        },
+        "fleetRow": {
+          "id": "unit-8",
+          "accountId": "demo",
+          "alias": "B 1357 VWX",
+          "label": "B 1357 VWX",
+          "latitude": -6.121286179687668,
+          "longitude": 106.94563496731853,
+          "speed": 19,
+          "lastUpdate": 1777578295954
+        },
+        "headlineJobOrder": {
+          "name": "JO-DEMO-008",
+          "jobOrderId": "JO-DEMO-008",
+          "originName": "Load Kedua",
+          "destinationName": "Unload Kedua",
+          "customerName": "PT Apel",
+          "tempMin": -5,
+          "tempMax": 0,
+          "driverAssign": [
+            {
+              "employee": "CREW-8",
+              "employee_name": "AGUS WIJAYA",
+              "contact_no": "081234567002",
+              "idx": 1
+            }
+          ],
+          "stops": [
+            {
+              "name": "Load Kedua",
+              "taskAddress": "Load Kedua",
+              "taskType": "load",
+              "latitude": -6.111286179687668,
+              "longitude": 106.95563496731853
+            },
+            {
+              "name": "Unload Kedua",
+              "taskAddress": "Unload Kedua",
+              "taskType": "unload",
+              "latitude": -7.158089186802762,
+              "longitude": 112.79324661464103
+            }
+          ],
+          "etaOrigin": 1777581955954,
+          "etaDestination": 1777585555954
+        },
+        "jobOrders": [
+          {
+            "jobOrderId": "JO-DEMO-008",
+            "originName": "Load Kedua",
+            "destinationName": "Unload Kedua",
+            "tempMin": -5,
+            "tempMax": 0,
+            "driverAssign": [
+              {
+                "employee": "CREW-8",
+                "employee_name": "AGUS WIJAYA",
+                "contact_no": "081234567002",
+                "idx": 1
+              }
+            ]
+          }
+        ],
+        "incidents": []
+      }
+    },
+    {
+      "rowId": "2026-04-30|matched::demo::D 2468 YZA",
+      "day": "2026-04-30",
+      "tenantLabel": "demo",
+      "customerName": "PT Nanas",
+      "unitKey": "demo::unit-9",
+      "unitId": "unit-9",
+      "unitLabel": "D 2468 YZA",
+      "normalizedPlate": "D 2468 YZA",
+      "severity": "normal",
+      "boardStatus": "normal",
+      "jobOrderId": "JO-DEMO-009",
+      "jobOrderCount": 1,
+      "originName": "Load Ketiga",
+      "destinationName": "Unload Ketiga",
+      "tempMin": 2,
+      "tempMax": 8,
+      "etaOrigin": "2026-04-30T20:45:55.954Z",
+      "etaDestination": "2026-04-30T21:45:55.954Z",
+      "driverAppStatus": "",
+      "incidentCodes": [],
+      "incidentSummary": "",
+      "unmatchedReason": "",
+      "overrideActive": false,
+      "metadata": {
+        "shippingStatus": {
+          "key": "sampai-unload",
+          "label": "SAMPAI UNLOAD",
+          "changedAt": 1777574755954
+        },
+        "eta": {
+          "durationSeconds": 13381,
+          "distanceMeters": 356292,
+          "status": "on-time",
+          "stopName": "Unload Ketiga",
+          "stopType": "unload",
+          "calculatedAt": 1777578355954
+        },
+        "fleetRow": {
+          "id": "unit-9",
+          "accountId": "demo",
+          "alias": "D 2468 YZA",
+          "label": "D 2468 YZA",
+          "latitude": -6.129014437908609,
+          "longitude": 106.7968681095388,
+          "speed": 50,
+          "lastUpdate": 1777578295954
+        },
+        "headlineJobOrder": {
+          "name": "JO-DEMO-009",
+          "jobOrderId": "JO-DEMO-009",
+          "originName": "Load Ketiga",
+          "destinationName": "Unload Ketiga",
+          "customerName": "PT Nanas",
+          "tempMin": 2,
+          "tempMax": 8,
+          "driverAssign": [
+            {
+              "employee": "CREW-9",
+              "employee_name": "DEDI KURNIAWAN",
+              "contact_no": "081234567003",
+              "idx": 1
+            }
+          ],
+          "stops": [
+            {
+              "name": "Load Ketiga",
+              "taskAddress": "Load Ketiga",
+              "taskType": "load",
+              "latitude": -6.119014437908609,
+              "longitude": 106.80686810953881
+            },
+            {
+              "name": "Unload Ketiga",
+              "taskAddress": "Unload Ketiga",
+              "taskType": "unload",
+              "latitude": -7.204722229290651,
+              "longitude": 112.75512275116778
+            }
+          ],
+          "etaOrigin": 1777581955954,
+          "etaDestination": 1777585555954
+        },
+        "jobOrders": [
+          {
+            "jobOrderId": "JO-DEMO-009",
+            "originName": "Load Ketiga",
+            "destinationName": "Unload Ketiga",
+            "tempMin": 2,
+            "tempMax": 8,
+            "driverAssign": [
+              {
+                "employee": "CREW-9",
+                "employee_name": "DEDI KURNIAWAN",
+                "contact_no": "081234567003",
+                "idx": 1
+              }
+            ]
+          }
+        ],
+        "incidents": []
+      }
+    },
+    {
+      "rowId": "2026-04-30|matched::demo::L 3579 BCD",
+      "day": "2026-04-30",
+      "tenantLabel": "demo",
+      "customerName": "PT Mangga Dua",
+      "unitKey": "demo::unit-10",
+      "unitId": "unit-10",
+      "unitLabel": "L 3579 BCD",
+      "normalizedPlate": "L 3579 BCD",
+      "severity": "normal",
+      "boardStatus": "normal",
+      "jobOrderId": "JO-DEMO-010",
+      "jobOrderCount": 1,
+      "originName": "Gudang Utama",
+      "destinationName": "Warehouse Timur",
+      "tempMin": 2,
+      "tempMax": 8,
+      "etaOrigin": "2026-04-30T20:45:55.954Z",
+      "etaDestination": "2026-04-30T21:45:55.954Z",
+      "driverAppStatus": "",
+      "incidentCodes": [],
+      "incidentSummary": "",
+      "unmatchedReason": "",
+      "overrideActive": false,
+      "metadata": {
+        "shippingStatus": {
+          "key": "selesai-bongkar",
+          "label": "SELESAI BONGKAR",
+          "changedAt": 1777574755954
+        },
+        "eta": {
+          "durationSeconds": 12827,
+          "distanceMeters": 375470,
+          "status": "on-time",
+          "stopName": "Warehouse Timur",
+          "stopType": "unload",
+          "calculatedAt": 1777578355954
+        },
+        "fleetRow": {
+          "id": "unit-10",
+          "accountId": "demo",
+          "alias": "L 3579 BCD",
+          "label": "L 3579 BCD",
+          "latitude": -6.128290432067671,
+          "longitude": 106.79471417887372,
+          "speed": 25,
+          "lastUpdate": 1777578295954
+        },
+        "headlineJobOrder": {
+          "name": "JO-DEMO-010",
+          "jobOrderId": "JO-DEMO-010",
+          "originName": "Gudang Utama",
+          "destinationName": "Warehouse Timur",
+          "customerName": "PT Mangga Dua",
+          "tempMin": 2,
+          "tempMax": 8,
+          "driverAssign": [
+            {
+              "employee": "CREW-10",
+              "employee_name": "RUDI HARTONO",
+              "contact_no": "081234567004",
+              "idx": 1
+            }
+          ],
+          "stops": [
+            {
+              "name": "Gudang Utama",
+              "taskAddress": "Gudang Utama",
+              "taskType": "load",
+              "latitude": -6.118290432067671,
+              "longitude": 106.80471417887372
+            },
+            {
+              "name": "Warehouse Timur",
+              "taskAddress": "Warehouse Timur",
+              "taskType": "unload",
+              "latitude": -7.15904972769724,
+              "longitude": 112.75596273080075
+            }
+          ],
+          "etaOrigin": 1777581955954,
+          "etaDestination": 1777585555954
+        },
+        "jobOrders": [
+          {
+            "jobOrderId": "JO-DEMO-010",
+            "originName": "Gudang Utama",
+            "destinationName": "Warehouse Timur",
+            "tempMin": 2,
+            "tempMax": 8,
+            "driverAssign": [
+              {
+                "employee": "CREW-10",
+                "employee_name": "RUDI HARTONO",
+                "contact_no": "081234567004",
+                "idx": 1
+              }
+            ]
+          }
+        ],
+        "incidents": []
+      }
+    },
+    {
+      "rowId": "2026-04-30|matched::demo::H 4680 EFG",
+      "day": "2026-04-30",
+      "tenantLabel": "demo",
+      "customerName": "PT Jeruk Manis",
+      "unitKey": "demo::unit-11",
+      "unitId": "unit-11",
+      "unitLabel": "H 4680 EFG",
+      "normalizedPlate": "H 4680 EFG",
+      "severity": "normal",
+      "boardStatus": "normal",
+      "jobOrderId": "JO-DEMO-011",
+      "jobOrderCount": 1,
+      "originName": "Depo Pusat",
+      "destinationName": "DC Selatan",
+      "tempMin": 2,
+      "tempMax": 8,
+      "etaOrigin": "2026-04-30T20:45:55.954Z",
+      "etaDestination": "2026-04-30T21:45:55.954Z",
+      "driverAppStatus": "",
+      "incidentCodes": [],
+      "incidentSummary": "",
+      "unmatchedReason": "",
+      "overrideActive": false,
+      "metadata": {
+        "shippingStatus": {
+          "key": "selesai-bongkar",
+          "label": "SELESAI BONGKAR",
+          "changedAt": 1777574755954
+        },
+        "eta": {
+          "durationSeconds": 16440,
+          "distanceMeters": 97272,
+          "status": "on-time",
+          "stopName": "DC Selatan",
+          "stopType": "unload",
+          "calculatedAt": 1777578355954
+        },
+        "fleetRow": {
+          "id": "unit-11",
+          "accountId": "demo",
+          "alias": "H 4680 EFG",
+          "label": "H 4680 EFG",
+          "latitude": -6.0672931155939684,
+          "longitude": 106.80167931791961,
+          "speed": 43,
+          "lastUpdate": 1777578295954
+        },
+        "headlineJobOrder": {
+          "name": "JO-DEMO-011",
+          "jobOrderId": "JO-DEMO-011",
+          "originName": "Depo Pusat",
+          "destinationName": "DC Selatan",
+          "customerName": "PT Jeruk Manis",
+          "tempMin": 2,
+          "tempMax": 8,
+          "driverAssign": [
+            {
+              "employee": "CREW-11",
+              "employee_name": "SLAMET RIYADI",
+              "contact_no": "081234567005",
+              "idx": 1
+            }
+          ],
+          "stops": [
+            {
+              "name": "Depo Pusat",
+              "taskAddress": "Depo Pusat",
+              "taskType": "load",
+              "latitude": -6.057293115593969,
+              "longitude": 106.81167931791961
+            },
+            {
+              "name": "DC Selatan",
+              "taskAddress": "DC Selatan",
+              "taskType": "unload",
+              "latitude": -7.21448402205799,
+              "longitude": 112.73737432380018
+            }
+          ],
+          "etaOrigin": 1777581955954,
+          "etaDestination": 1777585555954
+        },
+        "jobOrders": [
+          {
+            "jobOrderId": "JO-DEMO-011",
+            "originName": "Depo Pusat",
+            "destinationName": "DC Selatan",
+            "tempMin": 2,
+            "tempMax": 8,
+            "driverAssign": [
+              {
+                "employee": "CREW-11",
+                "employee_name": "SLAMET RIYADI",
+                "contact_no": "081234567005",
+                "idx": 1
+              }
+            ]
+          }
+        ],
+        "incidents": []
+      }
+    },
+    {
+      "rowId": "2026-04-30|matched::demo::B 5791 HIJ",
+      "day": "2026-04-30",
+      "tenantLabel": "demo",
+      "customerName": "PT Semangka",
+      "unitKey": "demo::unit-12",
+      "unitId": "unit-12",
+      "unitLabel": "B 5791 HIJ",
+      "normalizedPlate": "B 5791 HIJ",
+      "severity": "normal",
+      "boardStatus": "normal",
+      "jobOrderId": "JO-DEMO-012",
+      "jobOrderCount": 1,
+      "originName": "Cold Storage A",
+      "destinationName": "Depo Barat",
+      "tempMin": 2,
+      "tempMax": 8,
+      "etaOrigin": "2026-04-30T20:45:55.954Z",
+      "etaDestination": "2026-04-30T21:45:55.954Z",
+      "driverAppStatus": "",
+      "incidentCodes": [],
+      "incidentSummary": "",
+      "unmatchedReason": "",
+      "overrideActive": false,
+      "metadata": {
+        "shippingStatus": {
+          "key": "selesai-bongkar",
+          "label": "SELESAI BONGKAR",
+          "changedAt": 1777574755954
+        },
+        "eta": {
+          "durationSeconds": 17762,
+          "distanceMeters": 179108,
+          "status": "on-time",
+          "stopName": "Depo Barat",
+          "stopType": "unload",
+          "calculatedAt": 1777578355954
+        },
+        "fleetRow": {
+          "id": "unit-12",
+          "accountId": "demo",
+          "alias": "B 5791 HIJ",
+          "label": "B 5791 HIJ",
+          "latitude": -6.326637904790276,
+          "longitude": 106.70266430533503,
+          "speed": 2,
+          "lastUpdate": 1777578295954
+        },
+        "headlineJobOrder": {
+          "name": "JO-DEMO-012",
+          "jobOrderId": "JO-DEMO-012",
+          "originName": "Cold Storage A",
+          "destinationName": "Depo Barat",
+          "customerName": "PT Semangka",
+          "tempMin": 2,
+          "tempMax": 8,
+          "driverAssign": [
+            {
+              "employee": "CREW-12",
+              "employee_name": "WAHYU PRATAMA",
+              "contact_no": "081234567006",
+              "idx": 1
+            }
+          ],
+          "stops": [
+            {
+              "name": "Cold Storage A",
+              "taskAddress": "Cold Storage A",
+              "taskType": "load",
+              "latitude": -6.3166379047902765,
+              "longitude": 106.71266430533504
+            },
+            {
+              "name": "Depo Barat",
+              "taskAddress": "Depo Barat",
+              "taskType": "unload",
+              "latitude": -7.196547308946554,
+              "longitude": 112.72724014379097
+            }
+          ],
+          "etaOrigin": 1777581955954,
+          "etaDestination": 1777585555954
+        },
+        "jobOrders": [
+          {
+            "jobOrderId": "JO-DEMO-012",
+            "originName": "Cold Storage A",
+            "destinationName": "Depo Barat",
+            "tempMin": 2,
+            "tempMax": 8,
+            "driverAssign": [
+              {
+                "employee": "CREW-12",
+                "employee_name": "WAHYU PRATAMA",
+                "contact_no": "081234567006",
+                "idx": 1
+              }
+            ]
+          }
+        ],
+        "incidents": []
+      }
+    }
+  ],
+  "total": 12,
+  "day": "2026-04-30"
+}

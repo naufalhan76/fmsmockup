@@ -30,6 +30,9 @@ import { TripMonitorPanel } from './components/trip-monitor/TripMonitorPanel.jsx
 import { TripMonitorFloatingPanel as TripMonitorFloatingPanelExtracted } from './components/trip-monitor/TripMonitorFloatingPanel.jsx';
 import { tripMonitorStopKey, extractTmsDriverPhone } from './components/trip-monitor/helpers.jsx';
 import { AstroReportPanel } from './components/AstroReportPanel.jsx';
+import MOCK_BOARD from './mock-board.json';
+import MOCK_HISTORY from './mock-history.json';
+import MOCK_INCIDENTS from './mock-incidents.json';
 import { MapPanel } from './components/MapPanel.jsx';
 import { TempErrorsPanel } from './components/TempErrorsPanel.jsx';
 import { StopIdlePanel } from './components/StopIdlePanel.jsx';
