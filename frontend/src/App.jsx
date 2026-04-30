@@ -427,11 +427,29 @@ function useLeafletModule(enabled = true) {
 
   return leaflet;
 }
+const DEMO_USER = { id: "demo-user", username: "demo", displayName: "Demo User", role: "admin", isActive: true };
+let mockLoggedIn = false;
 const api = async (url, options = {}) => {
-  const response = await fetch(url, { headers: { 'Content-Type': 'application/json' }, ...options });
-  const payload = await response.json().catch(() => ({ ok: false, error: 'Invalid server response.' }));
-  if (!response.ok || payload.ok === false) throw new Error(payload.error || `HTTP ${response.status}`);
-  return payload;
+  const u = new URL(url, "http://localhost");
+  const p = u.pathname;
+  const body = options.body ? JSON.parse(options.body) : {};
+  await new Promise(r => setTimeout(r, 50));
+  if (p === "/api/status") return { ok: true, status: { runtime: { isPolling: true, nextRunAt: Date.now() + 60000 }, webAuth: { sessionUser: mockLoggedIn ? DEMO_USER : null }, accounts: { demo: { units: {} } } } };
+  if (p === "/api/web-session") return { ok: true, session: mockLoggedIn ? { user: DEMO_USER } : null };
+  if (p === "/api/web-auth/login") { if (body.username === "demo" && body.password === "demo123") { mockLoggedIn = true; return { ok: true, user: DEMO_USER }; } throw new Error("Username atau password salah. Gunakan demo / demo123"); }
+  if (p === "/api/web-auth/logout") { mockLoggedIn = false; return { ok: true }; }
+  if (p === "/api/web-auth/users") return { ok: true, users: [DEMO_USER] };
+  if (p === "/api/config") return { ok: true, config: { autoStart: false, pollIntervalMs: 60000, accounts: [{ id: "demo", label: "Demo Account", hasSessionCookie: true, authEmail: "demo@gpstracker.id" }] } };
+  if (p === "/api/save-config") return { ok: true };
+  if (p === "/api/tms/board") { const rows = MOCK_BOARD.rows.filter(r => r.boardStatus !== "closed"); return { ok: true, rows, total: rows.length, day: MOCK_BOARD.day }; }
+  if (p === "/api/tms/board/detail") { const rowId = u.searchParams.get("rowId") || ""; const row = MOCK_BOARD.rows.find(r => r.rowId === rowId); if (!row) throw new Error("Not found"); return { ok: true, detail: { ...row, incidentHistory: MOCK_INCIDENTS.incidents } }; }
+  if (p === "/api/unit-history") return MOCK_HISTORY;
+  if (p.startsWith("/api/tms/overrides/") && p.endsWith("/audit")) return { ok: true, audit: [] };
+  if (p.startsWith("/api/tms/overrides/")) { if (body.shippingStatus) { const id = decodeURIComponent(p.split("/")[4] || ""); const row = MOCK_BOARD.rows.find(r => r.jobOrderId === id); if (row && row.metadata) { row.metadata.shippingStatus = body.shippingStatus; if (body.shippingStatus.key === "selesai-pengiriman") row.boardStatus = "closed"; } } return { ok: true, override: body }; }
+  if (p === "/api/tms/crew-phone") return { ok: true, phone: "081234567890", name: "BUDI SANTOSO" };
+  if (p.startsWith("/api/astro/")) return { ok: true, snapshots: [], rows: [] };
+  if (p === "/api/auth/login" || p === "/api/auth/logout" || p === "/api/tms/auth/logout") return { ok: true };
+  return { ok: true };
 };
 
 function normalizeWaPhone(value) {
@@ -3248,7 +3266,7 @@ export default function App() {
         const sanitizedNopol = unitLabel.replace(/[^a-zA-Z0-9]/g, '');
         nopolPrefix = `${sanitizedNopol}-`;
       }
-      const response = await fetch(`/api/astro/report/export?${query.toString()}`);
+      const response = { ok: true, blob: () => Promise.resolve(new Blob()) };
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       const blob = await response.blob();
       const url = window.URL.createObjectURL(blob);
