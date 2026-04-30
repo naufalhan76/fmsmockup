@@ -89,7 +89,7 @@ const StatGridSkeleton = ({ count = 4 }) => (
 );
 
 const BrandLockup = ({ compact = false }) => <div className={`brand-lockup ${compact ? 'brand-lockup-compact' : ''}`}>
-  <span className="brand-mark">S</span>
+  <span className="brand-mark">G</span>
   <span className="brand-wordmark"><span className="brand-wordmark-primary">GPS Tracker</span></span>
 </div>;
 
@@ -440,6 +440,8 @@ const api = async (url, options = {}) => {
   if (p === "/api/web-auth/logout") { mockLoggedIn = false; return { ok: true }; }
   if (p === "/api/web-auth/users") return { ok: true, users: [DEMO_USER] };
   if (p === "/api/config") return { ok: true, config: { autoStart: false, pollIntervalMs: 60000, accounts: [{ id: "demo", label: "Demo Account", hasSessionCookie: true, authEmail: "demo@gpstracker.id" }] } };
+  if (p === "/api/report") return { ok: true, summary: { totalUnits: 12, activeTrips: 9, incidents: 4, avgTemp: -18.5 }, dailyTotals: [] };
+  if (p === "/api/monitor") return { ok: true, endpoints: [], lastCheck: Date.now() };
   if (p === "/api/save-config") return { ok: true };
   if (p === "/api/tms/board") { const rows = MOCK_BOARD.rows.filter(r => r.boardStatus !== "closed"); return { ok: true, rows, total: rows.length, day: MOCK_BOARD.day }; }
   if (p === "/api/tms/board/detail") { const rowId = u.searchParams.get("rowId") || ""; const row = MOCK_BOARD.rows.find(r => r.rowId === rowId); if (!row) throw new Error("Not found"); return { ok: true, detail: { ...row, incidentHistory: MOCK_INCIDENTS.incidents } }; }
@@ -1527,15 +1529,10 @@ export default function App() {
   const showOverviewChrome = false;
   const navItems = useMemo(() => ([
     { id: 'overview', label: 'Overview', icon: LayoutDashboard },
-    { id: 'fleet', label: 'Fleet Live', icon: Navigation },
-    { id: 'trip-monitor', label: 'Trip Monitor', icon: Truck },
+    { id: 'fleet', label: 'Fleet', icon: Navigation },
+    { id: 'trip-monitor', label: 'Trips', icon: Truck },
     { id: 'map', label: 'Map', icon: MapIcon },
-    { id: 'astro-report', label: 'Astro Report', icon: BarChart3 },
-    { id: 'temp-errors', label: 'Temp Errors', icon: Thermometer },
-    { id: 'stop', label: 'Stop/Idle', icon: Flag },
-    { id: 'api-monitor', label: 'API Monitor', icon: Activity },
-    ...(isAdmin ? [{ id: 'config', label: 'Config', icon: Settings }, { id: 'admin', label: 'Admin', icon: Settings }] : []),
-  ]), [isAdmin]);
+  ]), []);
 
   const cmdPaletteCommands = useMemo(() => [
     ...navItems.map((item, index) => ({
@@ -3292,7 +3289,7 @@ export default function App() {
     return <div className="auth-shell" data-state="loading">
       <div className="auth-split-left">
         <div className="auth-brand-showcase">
-          <div className="auth-brand-logo"><span className="brand-mark">S</span></div>
+          <div className="auth-brand-logo"><span className="brand-mark">G</span></div>
           <p className="auth-brand-tagline">Loading workspace...</p>
           <div className="auth-brand-spinner"><UISpinner /></div>
         </div>
@@ -3321,7 +3318,7 @@ export default function App() {
     return <div className="auth-shell" data-state="signin">
       <div className="auth-split-left">
         <div className="auth-brand-showcase">
-          <div className="auth-brand-logo"><span className="brand-mark">S</span></div>
+          <div className="auth-brand-logo"><span className="brand-mark">G</span></div>
           <h2 className="auth-brand-headline">GPS Tracker</h2>
           <p className="auth-brand-tagline">Real-time fleet monitoring, temperature compliance, and route tracking.</p>
           <div className="auth-brand-stats" aria-hidden="true">

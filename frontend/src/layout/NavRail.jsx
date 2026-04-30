@@ -52,7 +52,7 @@ export function NavRail({
     <nav className={`navrail ${collapsed ? 'navrail-collapsed' : ''}`.trim()} aria-label="Workspace navigation">
       {/* ---- Head: brand + collapse ---- */}
       <div className="navrail-head">
-        <button type="button" className="navrail-brand" onClick={() => onSelect?.('overview')} title="Sowhat">
+        <button type="button" className="navrail-brand" onClick={() => onSelect?.('overview')} title="GPS Tracker">
           <span className="navrail-mark">S</span>
           {!collapsed ? <span className="navrail-wordmark">Sowhat</span> : null}
         </button>
