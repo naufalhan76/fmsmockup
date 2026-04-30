@@ -34,10 +34,7 @@ import { MapPanel } from './components/MapPanel.jsx';
 import { TempErrorsPanel } from './components/TempErrorsPanel.jsx';
 import { StopIdlePanel } from './components/StopIdlePanel.jsx';
 
-const ROUTE_PANEL_IDS = new Set([
-  'overview', 'fleet', 'trip-monitor', 'map', 'astro-report', 'temp-errors',
-  'stop', 'api-monitor', 'historical', 'pod', 'config', 'admin',
-]);
+const ROUTE_PANEL_IDS = new Set(['overview', 'fleet', 'trip-monitor', 'map', 'historical']);
 
 function useActivePanelRoute() {
   const location = useLocation();
