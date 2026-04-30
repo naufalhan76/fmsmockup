@@ -1,4 +1,4 @@
-﻿const fs = require('fs');
+const fs = require('fs');
 const path = require('path');
 
 const MOCK = path.join(process.cwd(), 'mock');
@@ -19,7 +19,7 @@ let loggedIn = true;
 
 module.exports = async function handler(req, res) {
   const url = new URL(req.url, 'http://localhost');
-  const p = url.pathname.replace('/api/handler', '').replace('/api', '') || '/';
+  const p = url.pathname.replace('/api', '') || '/';
   const m = req.method;
 
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -81,5 +81,8 @@ module.exports = async function handler(req, res) {
   if (p === '/save-config') return res.json({ ok: true });
   if (p === '/auth/login' || p === '/auth/logout' || p === '/tms/auth/logout') return res.json({ ok: true });
 
+  if (p.startsWith('/astro/')) return res.json({ ok: true, snapshots: [] });
   return res.status(404).json({ error: 'API endpoint not found: ' + p });
 };
+
+

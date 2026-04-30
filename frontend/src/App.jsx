@@ -90,7 +90,7 @@ const StatGridSkeleton = ({ count = 4 }) => (
 
 const BrandLockup = ({ compact = false }) => <div className={`brand-lockup ${compact ? 'brand-lockup-compact' : ''}`}>
   <span className="brand-mark">S</span>
-  <span className="brand-wordmark"><span className="brand-wordmark-primary">Sowhat</span></span>
+  <span className="brand-wordmark"><span className="brand-wordmark-primary">GPS Tracker</span></span>
 </div>;
 
 function formatInputDate(date) {
@@ -3307,8 +3307,8 @@ export default function App() {
       <div className="auth-split-left">
         <div className="auth-brand-showcase">
           <div className="auth-brand-logo"><span className="brand-mark">S</span></div>
-          <h2 className="auth-brand-headline">Sowhat</h2>
-          <p className="auth-brand-tagline">Fleet intelligence, temperature compliance, and operational clarity - in one workspace.</p>
+          <h2 className="auth-brand-headline">GPS Tracker</h2>
+          <p className="auth-brand-tagline">Real-time fleet monitoring, temperature compliance, and route tracking.</p>
           <div className="auth-brand-stats" aria-hidden="true">
             <div className="auth-brand-stat">
               <span className="auth-brand-stat-value">24/7</span>
@@ -3348,7 +3348,7 @@ export default function App() {
 
         <div className="auth-card">
           <h1 className="auth-title">Sign in</h1>
-          <p className="auth-subtitle">Masuk ke workspace Sowhat.</p>
+          <p className="auth-subtitle">Sign in to continue.</p>
 
           {authModal.open ? (
             <div className="auth-error" role="alert">
@@ -4142,7 +4142,7 @@ function FleetExpandedDetails({ row, detail, busy, onOpenTempErrors, onSeeHistor
   </div>;
 }
 
-const FLEET_WORKSPACE_SPLIT_KEY = 'sowhat:fleet-workspace-split';
+const FLEET_WORKSPACE_SPLIT_KEY = 'GPS Tracker:fleet-workspace-split';
 const FLEET_WORKSPACE_SPLIT_MIN = 0.45;
 const FLEET_WORKSPACE_SPLIT_MAX = 0.92;
 const FLEET_WORKSPACE_SPLIT_DEFAULT = 0.88;
