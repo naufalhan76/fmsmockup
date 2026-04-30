@@ -1,0 +1,32 @@
+{
+  "name": "fms-mockup",
+  "private": true,
+  "version": "0.2.0",
+  "description": "Local analyst-friendly Solofleet dashboard with live fleet, temp incidents, and stop/idle insights",
+  "scripts": {
+    "build": "vite build",
+    "dev:ui": "vite",
+    "start:api": "node server.js",
+    "start": "node tools/dev-runner.js",
+    "serve": "node server.js",
+    "test:integration": "node tools/smoke-test.mjs",
+    "test:e2e": "node tools/smoke-test.mjs"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "leaflet": "^1.9.4",
+    "lucide-react": "^1.7.0",
+    "pg": "^8.20.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-leaflet": "^5.0.0",
+    "react-router-dom": "^7.14.2",
+    "recharts": "^3.8.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.2.2",
+    "@vitejs/plugin-react": "^6.0.1",
+    "tailwindcss": "^4.2.2",
+    "vite": "^8.0.3"
+  }
+}
