@@ -434,7 +434,7 @@ const api = async (url, options = {}) => {
   const p = u.pathname;
   const body = options.body ? JSON.parse(options.body) : {};
   await new Promise(r => setTimeout(r, 50));
-  if (p === "/api/status") return { ok: true, status: { runtime: { isPolling: true, nextRunAt: Date.now() + 60000 }, webAuth: { sessionUser: mockLoggedIn ? DEMO_USER : null }, accounts: { demo: { units: {} } } } };
+  if (p === "/api/status") return { ok: true, runtime: { isPolling: true, nextRunAt: Date.now() + 60000 }, webAuth: { sessionUser: mockLoggedIn ? DEMO_USER : null }, accounts: { demo: { units: {} } }, config: { autoStart: false, pollIntervalMs: 60000, accounts: [{ id: "demo", label: "Demo Account", hasSessionCookie: true }] } };
   if (p === "/api/web-session") return { ok: true, session: mockLoggedIn ? { user: DEMO_USER } : null };
   if (p === "/api/web-auth/login") { if (body.username === "demo" && body.password === "demo123") { mockLoggedIn = true; return { ok: true, user: DEMO_USER }; } throw new Error("Username atau password salah. Gunakan demo / demo123"); }
   if (p === "/api/web-auth/logout") { mockLoggedIn = false; return { ok: true }; }
